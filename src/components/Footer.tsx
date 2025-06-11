@@ -55,7 +55,7 @@ export const Footer = () => {
 
           <div className="border-t border-primary-foreground/20 pt-8 text-center">
             <p className="text-primary-foreground/80 flex items-center justify-center">
-              Feito com <Heart className="w-4 h-4 mx-2 text-red-400" /> para nossos clientes
+              Feito por Kauã Moraes para nossos clientes
             </p>
           </div>
         </div>
