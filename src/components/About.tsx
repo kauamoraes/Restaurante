@@ -1,5 +1,5 @@
 
-import { Chef, Heart, Star } from "lucide-react";
+import { ChefHat, Heart, Star } from "lucide-react";
 
 export const About = () => {
   return (
@@ -44,7 +44,7 @@ export const About = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6 rounded-lg bg-muted/50">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Chef className="w-8 h-8 text-primary" />
+                <ChefHat className="w-8 h-8 text-primary" />
               </div>
               <h4 className="text-xl font-semibold mb-3 text-foreground">Chefs Experientes</h4>
               <p className="text-muted-foreground">
