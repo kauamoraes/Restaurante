@@ -3,11 +3,11 @@ import { ChefHat, Heart, Star } from "lucide-react";
 
 export const About = () => {
   return (
-    <section id="sobre" className="py-20 bg-background">
+    <section id="sobre" className="py-20 bg-gradient-to-br from-background via-primary/5 to-accent/5">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Nossa História
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -36,14 +36,15 @@ export const About = () => {
               <img 
                 src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?q=80&w=800" 
                 alt="Prato gourmet" 
-                className="rounded-lg shadow-2xl w-full h-[400px] object-cover"
+                className="rounded-lg shadow-2xl w-full h-[400px] object-cover hover:scale-105 transition-transform duration-300"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-lg"></div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-lg bg-muted/50">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-6 rounded-lg bg-gradient-to-br from-card/80 to-primary/5 backdrop-blur-sm border border-primary/10 hover:shadow-lg transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ChefHat className="w-8 h-8 text-primary" />
               </div>
               <h4 className="text-xl font-semibold mb-3 text-foreground">Chefs Experientes</h4>
@@ -52,9 +53,9 @@ export const About = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-lg bg-muted/50">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-8 h-8 text-primary" />
+            <div className="text-center p-6 rounded-lg bg-gradient-to-br from-card/80 to-accent/5 backdrop-blur-sm border border-primary/10 hover:shadow-lg transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="w-8 h-8 text-accent" />
               </div>
               <h4 className="text-xl font-semibold mb-3 text-foreground">Ingredientes Frescos</h4>
               <p className="text-muted-foreground">
@@ -62,8 +63,8 @@ export const About = () => {
               </p>
             </div>
 
-            <div className="text-center p-6 rounded-lg bg-muted/50">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-6 rounded-lg bg-gradient-to-br from-card/80 to-primary/5 backdrop-blur-sm border border-primary/10 hover:shadow-lg transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-primary" />
               </div>
               <h4 className="text-xl font-semibold mb-3 text-foreground">Excelência</h4>
